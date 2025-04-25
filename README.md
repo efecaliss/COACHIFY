@@ -26,6 +26,7 @@ We will primarily use our internal Coachify database, which contains (among othe
 
 Additional data (e.g., session length, meeting format) will be collected via a short mentor survey. All personally identifiable information (names, contact details) will be anonymized or replaced with generic IDs to ensure privacy.
 
+A more detailed version of this report, including statistical results and visualizations, is provided in the report folder of this repository.
 ## 4. Key Factors to Be Analyzed
 Based on preliminary discussion and domain knowledge, we will focus on these 7 factors:
 
@@ -86,6 +87,7 @@ Based on preliminary discussion and domain knowledge, we will focus on these 7 f
 - All personally identifiable data will be removed.  
 - Analyses and visualizations will only showcase aggregate trends.  
 - The survey data from mentors will be kept confidential and used strictly for this analytical purpose.
+- This analysis contains no legally or ethically sensitive data. All necessary anonymization and data protections have been implemented prior to sharing.
 
 ## 7. Limitations & Future Work
 - **Small Sample:** Roughly 150 students and a limited set of mentors (about 40) may restrict the breadth of statistical power.  

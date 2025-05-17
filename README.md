@@ -93,11 +93,7 @@ In this phase, we applied a logistic regression model to predict whether a stude
 - Weekly Call Frequency
 - Weekly Message Days
 
-We used 10-fold cross-validation to evaluate model performance, which is especially suitable for small datasets. The average accuracy across all folds was **45.15%**, with individual fold scores ranging between 25% and 66%.
-
-These results indicate that the selected mentor communication features alone are **not strong predictors** of student retention. While these features reflect mentor behavior and interaction style, the outcome suggests that early-stage student dropout is likely influenced by additional factors—such as student motivation, external circumstances, or academic readiness—which were not captured in this dataset.
-
-Therefore, although the machine learning model was correctly implemented and validated, its performance confirms the earlier statistical analysis from Phase 2: **mentor behaviors alone are insufficient to accurately predict retention**.
+We used 10-fold cross-validation to evaluate model performance, which is especially suitable for small datasets.
 
 ## 6. Ethical & Privacy Considerations
 - All personally identifiable data will be removed.  

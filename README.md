@@ -27,6 +27,7 @@ We will primarily use our internal Coachify database, which contains (among othe
 Additional data (e.g., session length, meeting format) will be collected via a short mentor survey. All personally identifiable information (names, contact details) will be anonymized or replaced with generic IDs to ensure privacy.
 
 A more detailed version of this report, including statistical results and visualizations, is provided in the report folder of this repository.
+
 ## 4. Key Factors to Be Analyzed
 Based on preliminary discussion and domain knowledge, we will focus on these 7 factors:
 
@@ -83,10 +84,25 @@ Based on preliminary discussion and domain knowledge, we will focus on these 7 f
   - If video calls show a significantly higher retention rate, propose guidelines for mentors to use video more frequently.  
   - If the best YKS-ranked mentors consistently achieve higher retention, consider adjusting mentor assignment or marketing approach.
 
+### e) Apply ML Methods – Logistic Regression with K-Fold Validation
+
+In this phase, we applied a logistic regression model to predict whether a student would continue to the second month based on four mentor-related features:
+
+- Mentor's Field (Quantitative / Equal Weight)
+- Primary Communication Format (Video / Voice)
+- Weekly Call Frequency
+- Weekly Message Days
+
+We used 10-fold cross-validation to evaluate model performance, which is especially suitable for small datasets. The average accuracy across all folds was **45.15%**, with individual fold scores ranging between 25% and 66%.
+
+These results indicate that the selected mentor communication features alone are **not strong predictors** of student retention. While these features reflect mentor behavior and interaction style, the outcome suggests that early-stage student dropout is likely influenced by additional factors—such as student motivation, external circumstances, or academic readiness—which were not captured in this dataset.
+
+Therefore, although the machine learning model was correctly implemented and validated, its performance confirms the earlier statistical analysis from Phase 2: **mentor behaviors alone are insufficient to accurately predict retention**.
+
 ## 6. Ethical & Privacy Considerations
 - All personally identifiable data will be removed.  
 - Analyses and visualizations will only showcase aggregate trends.  
-- The survey data from mentors will be kept confidential and used strictly for this analytical purpose.
+- The survey data from mentors will be kept confidential and used strictly for this analytical purpose.  
 - This analysis contains no legally or ethically sensitive data. All necessary anonymization and data protections have been implemented prior to sharing.
 
 ## 7. Limitations & Future Work
@@ -100,3 +116,4 @@ Based on preliminary discussion and domain knowledge, we will focus on these 7 f
 
 ## 8. Conclusion
 By systematically analyzing these seven key factors, we aim to pinpoint which mentor and student attributes most strongly influence continued enrollment in Coachify’s YKS coaching services. These insights will be critical in refining mentor practices, guiding future platform features, and ultimately enhancing both student success and the company’s profitability.
+
